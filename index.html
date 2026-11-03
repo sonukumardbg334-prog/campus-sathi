@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/campussaathi-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusSaathi Pro — Next-Gen AI Smart Campus Portal</title>
+    <meta name="description" content="CampusSaathi Pro is a next-generation multi-institution smart campus platform with automated grievance resolution, AI assistant, attendance analytics, hostel and mess management." />
+    <meta name="keywords" content="campus management, college portal, student attendance, college ERP, multi-tenant university software, faculty timetable, grievance cell" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://campussaathi.in/" />
+    <meta name="theme-color" content="#0F172A" />
+    
+    <!-- Security: Force Insecure Request Upgrades -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://campussaathi.in/" />
+    <meta property="og:title" content="CampusSaathi — Smart College Management Platform" />
+    <meta property="og:description" content="Unified smart campus operations: attendance verification, examination results, student grievance cells, hostel management, and multi-tenant isolation." />
+    <meta property="og:image" content="https://campussaathi.in/assets/campussaathi-og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CampusSaathi" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://campussaathi.in/" />
+    <meta name="twitter:title" content="CampusSaathi — Smart College Management Platform" />
+    <meta name="twitter:description" content="Next-generation multi-college management platform for higher education institutions." />
+    <meta name="twitter:image" content="https://campussaathi.in/assets/campussaathi-og-preview.png" />
+    <!-- Immediate theme initialization script to prevent FOUC -->
+    <script>
+      (function() {
+        try {
+          var mode = localStorage.getItem('campussaathi_theme_mode') || 'dark';
+          var isDark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-background text-foreground antialiased selection:bg-teal-brand/20 selection:text-teal-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

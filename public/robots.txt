@@ -1,0 +1,23 @@
+# Robots.txt for CampusSaathi Multi-College Management Platform
+User-agent: *
+Allow: /
+Allow: /features
+Allow: /institutions
+Allow: /register-institution
+Allow: /register
+Allow: /login
+Allow: /privacy-policy
+Allow: /privacy
+Allow: /terms-and-conditions
+Allow: /terms
+Allow: /support
+Allow: /contact
+Allow: /feedback
+Allow: /report-bug
+
+# Disallow private authenticated campus portals & student records from web indexing
+Disallow: /app/
+Disallow: /app/*
+
+Sitemap: https://campussaathi.in/sitemap.xml
+
